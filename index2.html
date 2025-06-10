@@ -1,0 +1,204 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name – Portfolio</title>
+  <meta name="description" content="Brief introduction or tagline.">
+  <link rel="icon" href="favicon.ico">
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo"><img src="Logo.png" alt="Your Logo"></a>
+      <ul id="primary-navigation" class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Showcase</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="Malik's Resume December 2024.pdf">Download Resume</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/malik-stafford-6412871a9/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/malikstafford_1/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="container about-section" aria-label="About Me">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="SelfImage.jpg" alt="Your photo">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>To build valuable experience in the modern work environment while advancing my education and training in Engineering and Computer Science. I enjoy spending time with my family, watching sports and playing video games with friends.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+              <li><b><span>11/2024 - Current</span></b><br>Software Tester, Sagicor</li>
+              <li><b><span>11/2023 - 06/2024</span></b><br>Sales Associate, Sherwin-Williams</li>
+              <li><b><span>08/2023 - 10/2023</span></b><br>Projects Assistant, Access Records Management</li>
+              <li><b><span>06/2022 - 08/2022</span></b><br>Vacation Employee, T&amp;TEC</li>
+            </ul>
+          </div>
+          <div class="tab-contents " id="skills">
+            <ul>
+              <li><b><span>Microsoft Suite Proficiency</span></b><br>Excel, PowerPoint, Word</li>
+              <li><b><span>3D Modelling & Printing</span></b><br>SolidWorks, AutoCAD, Fusion360</li>
+              <li><b><span>Data Visualization</span></b><br>Power BI,Tableau, SQL</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><b><span>2024</span></b><br>BSc Mechanical Engineering, University of the West Indies</li>
+              <li><b><span>2020</span></b><br>CAPE Diploma, Queen's Royal College</li>
+              <li><b><span>2018</span></b><br>CSEC Diploma, Queen's Royal College</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container" aria-label="Interactive Reports">
+      <h2>Showcase</h2>
+      <br>
+      <div class="projects-grid">
+        <div class="report-container">
+          <h3>Kaggle Report</h3>
+          <div class="kaggle-embed" data-kernel="USERNAME/NOTEBOOK" data-height="600"></div>
+          <iframe src="https://www.kaggle.com/embed/malikstafford/capstoneproject-1?kernelSessionId=167653055" height="1200" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="CapstoneProject#1"></iframe>
+        </div>
+        <div class="report-container">
+          <h3>3D Printing Works</h3>
+          <iframe src="https://drive.google.com/embeddedfolderview?id=1qu11Yc7ZLGh1Nf9NGLFaQGB3b1ZJ6l6u#grid" style="width:100%; height:1200px; border:0;"allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="container" aria-label="Interactive Reports">
+      <br>
+      <div class="projects-grid">
+        <div class="report-container">
+          <h3>Power BI Report</h3>
+          <iframe title="SuperstoreProj" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=c0bff2d5-9009-4d16-9b24-69b9431643fe&autoAuth=true&ctid=aae862ee-56a9-48cb-ac59-11922bb9b864" height="850" style="margin: 0 auto; width: 100%; max-width: 1200px;" frameborder="0" scrolling="auto"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row contact-row">
+
+          <div class="contact-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <p><i class="fa-solid fa-envelope"></i> <a href="mailto:mstaffordpro@outlook.com" class="mail-link">
+  mstaffordpro@outlook.com
+</a>
+ </p>
+            <br>
+            <p><i class="fa-solid fa-square-phone"></i> 1-868-7160987</p>
+            <br>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/malik-stafford-6412871a9/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            <br>
+            <a href="Malik's Resume December 2024.pdf" download class="btn btn2">Download CV</a>
+          </div>
+
+          <div class="contact-right">
+            <h3>Leave A Message</h3>
+            <br>
+            <form name="submit-to-google-sheet" id="contact-form"
+                  action='https://script.google.com/macros/s/AKfycbwfPfa9shYGOR8jP8z2uL2Dnnm7s9iFT0EsUNdbvTMACCVnZwdOSaxTL9nAfQAqSdtQ/exec'
+                  method="POST">
+              <input type="text"   name="Name"    placeholder="Your Name"  required>
+              <input type="email"  name="Email"   placeholder="Your Email" required>
+              <textarea name="Message" rows="6"   placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg" role="alert"></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Malik Stafford. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function() {
+      const form = document.forms['submit-to-google-sheet'];
+      const msg  = document.getElementById('msg');
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        msg.textContent = '';
+        msg.classList.remove('error','success');
+
+        try {
+          const res = await fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form)
+          });
+          if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+          form.reset();
+          msg.textContent = 'Message sent! Thank you.';
+          msg.classList.add('success');
+        } catch (err) {
+          form.reset();
+          console.error(err);
+          msg.textContent = 'Message Submitted';
+          msg.classList.add('error');
+        }
+
+        setTimeout(() => {
+          msg.textContent = '';
+          msg.classList.remove('success','error');
+        }, 3000);
+      });
+    })();
+  </script>
+  
+
+  <script>
+    function opentab(tabName) {
+      document.querySelectorAll('.tab-contents').forEach(tc => tc.classList.remove('active-tab'));
+      document.querySelectorAll('.tab-links').forEach(tl => tl.classList.remove('active-link'));
+      document.getElementById(tabName).classList.add('active-tab');
+      document.querySelector(`.tab-links[onclick*="${tabName}"]`).classList.add('active-link');
+    }
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('primary-navigation');
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('nav-open');
+    });
+  </script>
+  
+
+</body>
+</html>
+
